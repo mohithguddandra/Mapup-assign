@@ -1,0 +1,111 @@
+/* CSS for the App component's parent container */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Styling for the parent container */
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Set the parent container as relative to create a new stacking context */
+}
+
+/* Styling for the Map component to make it full-screen */
+.map-container {
+  flex: 1;
+  height: 100%; /* Set the height to occupy the full viewport height */
+  width: 100%; /* Make sure the map occupies the full viewport width */
+  position: relative; /* Set the map as absolute to occupy the full parent container */
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* Set a z-index to ensure the map is below the Floating component */
+}
+/* CSS for the Floating component */
+.floating-controls {
+  position: fixed;
+  top: 0px;
+  left: 300px;
+
+  background-color: #ffffff; /* Set the background color to white */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif; /* Optional: Set a custom font family */
+  color: #333333; /* Optional: Set a custom text color */
+}
+
+/* CSS for the card container */
+.card-container {
+  position: fixed;
+  top: 0px;
+  right: 400px;
+  z-index: 4;
+  /* Add additional styling to make it visually appealing */
+  padding: 0px;
+  max-width: 400px;
+  max-height: 10px;
+  background-color: #ffffff;
+
+  box-shadow: 0 2px 8px rgba(255, 10, 10, 0.15);
+  /* Optionally, you can set a max-width to control the size of the card container */
+
+  font-family: Arial, sans-serif; /* Optional: Set a custom font family */
+  color: #333333; /* Optional: Set a custom text color */
+}
+/* App.css */
+.layout {
+  height: 100vh;
+}
+
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.header {
+  background: #fff;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  margin: 24px;
+  padding: 24px;
+  background: #fff;
+  min-height: 280px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.ant-layout-sider-trigger {
+  color: #fff;
+  font-size: 18px;
+  background: #001529;
+}
