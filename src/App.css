@@ -42,14 +42,15 @@ html {
 /* CSS for the card container */
 .card-container {
   position: fixed;
-  top: 0px;
-  right: 400px;
-  z-index: 4;
+  top: 2px;
+  right: 200px;
+  z-index: 1;
   /* Add additional styling to make it visually appealing */
-  padding: 0px;
-  max-width: 400px;
-  max-height: 10px;
+  padding: 3px;
+  max-width: 500px;
+  max-height: 100px;
   background-color: #ffffff;
+  overflow: scroll;
 
   box-shadow: 0 2px 8px rgba(255, 10, 10, 0.15);
   /* Optionally, you can set a max-width to control the size of the card container */

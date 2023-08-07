@@ -35,7 +35,6 @@ const Headerfooter = () => {
           <Menu.Item key="1" icon={<UserOutlined />}>
             Profile
           </Menu.Item>
-          {/* Add more sidebar menu items here */}
         </Menu>
       </Sider>
       <Layout>
@@ -59,7 +58,7 @@ const Headerfooter = () => {
         <Content className="content">
           <Map className="map-container" />
         </Content>
-        <Footer className="footer"> </Footer>
+        <Footer className="footer"></Footer>
       </Layout>
     </Layout>
   );

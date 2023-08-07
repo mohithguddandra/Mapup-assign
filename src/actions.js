@@ -1,5 +1,3 @@
-// src/actions.js
-
 export const setRegion = (region) => {
   return {
     type: "SET_REGION",
@@ -19,4 +17,3 @@ export const setCoordinates = (coordinates) => {
     payload: coordinates,
   };
 };
-

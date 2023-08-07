@@ -2,9 +2,10 @@ import "./App.css";
 import React from "react";
 import { Provider } from "react-redux";
 import store from "./store";
-
-import Floating from "./components/Floating";
 import Headerfooter from "./components/Headerfooter";
+//import Floating from "./components/Floating";
+//<Floating />
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Headerfooter />
         </div>
         <div className="floating-controls">
-          <Floating />
+          <Form />
         </div>
       </React.StrictMode>
     </Provider>

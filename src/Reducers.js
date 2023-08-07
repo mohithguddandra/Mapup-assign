@@ -2,7 +2,6 @@ const initialState = {
   selectedRegion: "",
   regionInfo: "",
   coordinates: [0, 0],
-  darkMode: false,
 };
 
 const regionReducer = (state = initialState, action) => {

@@ -60,6 +60,7 @@ const Floating = () => {
         break;
       case "india":
         fetchRegionInfo("India");
+
         break;
       case "uk":
         fetchRegionInfo("United Kingdom");
@@ -79,7 +80,7 @@ const Floating = () => {
         style={{ width: 200, marginRight: 16 }}
         placeholder="Select a region"
         onChange={handleRegionChange}
-        value={selectedRegion}
+        value={selectedRegion || undefined}
       >
         <Option value="usa">United States</Option>
         <Option value="india">India</Option>
@@ -88,11 +89,15 @@ const Floating = () => {
       <Button type="primary" onClick={handleLoadClick}>
         Load
       </Button>
-      <div className="card-container">
-        <Card>
-          <b>{regionInfo}</b>
-        </Card>
-      </div>
+      {regionInfo ? (
+        <div className="card-container">
+          <Card>
+            <b>
+              <p>{regionInfo}</p>
+            </b>
+          </Card>
+        </div>
+      ) : null}
     </div>
   );
 };
